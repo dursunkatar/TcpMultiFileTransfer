@@ -1,5 +1,6 @@
 # TCP MULTI TRANSFER TOOLS
-Tcp Multi File Transfer Tools
+
+TCP protokülünü kullanarak çoklu ve her türden dosya aktarımını destekler
 
 ![filesend](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/sendfile.jpg)
 
