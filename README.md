@@ -1,4 +1,4 @@
-# TCP MULTI TRANSFER TOOLS
+# TCP MULTI FILE TRANSFER TOOLS
 
 TCP protokülünü kullanarak çoklu ve her türden dosya aktarımını destekler
 
