@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -41,6 +42,9 @@ namespace TcpMultiFileTransfer
             socket.Send(bytesFileInfo);
             socket.Receive(WAIT);
 
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             int bytesRead;
             byte[] buffer = new byte[332800]; // 325 KB
             try
@@ -54,6 +58,9 @@ namespace TcpMultiFileTransfer
                         binaryWriter.Write(buffer, 0, bytesRead);
                         binaryWriter.Flush();
                     }
+
+                    stopwatch.Stop();
+                    lvi.SubItems[3].Text = totalTime(stopwatch);
                     lvi.SubItems[2].Text = "OK";
                 }
             }
@@ -74,7 +81,11 @@ namespace TcpMultiFileTransfer
                 catch { }
             }
         }
-
+        private static string totalTime(Stopwatch stopwatch)
+        {
+            double totalT = stopwatch.ElapsedMilliseconds / 1000.0;
+            return totalT > 60 ? totalT / 60.0 + " min" : totalT + " sec";
+        }
         private static ListViewItem listViewItem(FileInfo fileInfo)
         {
             var lvi = new ListViewItem();
@@ -86,6 +97,7 @@ namespace TcpMultiFileTransfer
             }
             lvi.SubItems.Add(strSize);
             lvi.SubItems.Add("Sending...");
+            lvi.SubItems.Add("");
             return lvi;
         }
 
