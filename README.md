@@ -2,8 +2,8 @@
 
 TCP protokülünü kullanarak çoklu ve her türden dosya aktarımını destekler
 
-![filesend](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/sendfilescrn.png)
+![filesend](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/sendscrn.png)
 
 ![receive](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/receivescrn.png)
 
-![dursun katar](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/aboutscrn.jpg)
+![dursun katar](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/aboutscrn.png)
