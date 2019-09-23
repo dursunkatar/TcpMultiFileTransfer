@@ -26,7 +26,7 @@ namespace TcpMultiFileTransfer
             {
                 socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 socket.Bind(new IPEndPoint(IPAddress.Any, port));
-                socket.Listen(0);
+                socket.Listen(100);
             }
             catch (Exception ex)
             {
