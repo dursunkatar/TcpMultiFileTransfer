@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -48,10 +49,20 @@ namespace TcpMultiFileTransfer
                             var fileInfo = ReceiverEngine.GetFileInfo(client);
                             var lvi = listViewItem(fileInfo);
                             AddListViewItem(lvi);
+
+                            var stopwatch = new Stopwatch();
+                            stopwatch.Start();
+
                             fileInfo.LoadData();
 
                             if (!IsStop)
+                            {
+                                stopwatch.Stop();
                                 lvi.SubItems[2].Text = "OK";
+                                lvi.SubItems[3].Text = totalTime(stopwatch);
+                            }
+
+
                         }).Start();
                     }
                     catch (Exception ex)
@@ -75,8 +86,16 @@ namespace TcpMultiFileTransfer
             }
             lvi.SubItems.Add(strSize);
             lvi.SubItems.Add("Receiving...");
+            lvi.SubItems.Add("");
             return lvi;
         }
+
+        private static string totalTime(Stopwatch stopwatch)
+        {
+            double totalT = stopwatch.ElapsedMilliseconds / 1000.0;
+            return totalT > 60 ? totalT / 60.0 + " min" : totalT + " sec";
+        }
+
         public static void Stop()
         {
             IsStop = true;
