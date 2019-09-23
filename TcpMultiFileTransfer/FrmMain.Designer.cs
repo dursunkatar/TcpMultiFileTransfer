@@ -1,4 +1,4 @@
-﻿namespace TcpMultiFileTransfer
+namespace TcpMultiFileTransfer
 {
     partial class FrmMain
     {
@@ -49,9 +49,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPortConnect = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -69,7 +71,7 @@
             this.tabControl1.Location = new System.Drawing.Point(7, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(510, 509);
+            this.tabControl1.Size = new System.Drawing.Size(618, 509);
             this.tabControl1.TabIndex = 10;
             // 
             // tabPage1
@@ -82,7 +84,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(502, 478);
+            this.tabPage1.Size = new System.Drawing.Size(610, 478);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Receive File";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -102,7 +104,7 @@
             // 
             this.btnWaitForFiles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWaitForFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnWaitForFiles.Location = new System.Drawing.Point(347, 6);
+            this.btnWaitForFiles.Location = new System.Drawing.Point(461, 4);
             this.btnWaitForFiles.Name = "btnWaitForFiles";
             this.btnWaitForFiles.Size = new System.Drawing.Size(143, 27);
             this.btnWaitForFiles.TabIndex = 11;
@@ -115,7 +117,7 @@
             this.txtPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPort.Location = new System.Drawing.Point(66, 6);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(275, 24);
+            this.txtPort.Size = new System.Drawing.Size(389, 24);
             this.txtPort.TabIndex = 10;
             this.txtPort.Text = "1453";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -125,13 +127,14 @@
             this.listViewReceiver.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader8});
             this.listViewReceiver.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listViewReceiver.GridLines = true;
             this.listViewReceiver.HideSelection = false;
             this.listViewReceiver.Location = new System.Drawing.Point(6, 36);
             this.listViewReceiver.Name = "listViewReceiver";
-            this.listViewReceiver.Size = new System.Drawing.Size(487, 436);
+            this.listViewReceiver.Size = new System.Drawing.Size(598, 436);
             this.listViewReceiver.TabIndex = 9;
             this.listViewReceiver.UseCompatibleStateImageBehavior = false;
             this.listViewReceiver.View = System.Windows.Forms.View.Details;
@@ -163,7 +166,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(502, 478);
+            this.tabPage2.Size = new System.Drawing.Size(610, 478);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Send File";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -172,7 +175,7 @@
             // 
             this.btnSendFiles.Location = new System.Drawing.Point(9, 446);
             this.btnSendFiles.Name = "btnSendFiles";
-            this.btnSendFiles.Size = new System.Drawing.Size(487, 26);
+            this.btnSendFiles.Size = new System.Drawing.Size(595, 26);
             this.btnSendFiles.TabIndex = 18;
             this.btnSendFiles.Text = "Send Files";
             this.btnSendFiles.UseVisualStyleBackColor = true;
@@ -183,13 +186,14 @@
             this.listViewSender.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.listViewSender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listViewSender.GridLines = true;
             this.listViewSender.HideSelection = false;
             this.listViewSender.Location = new System.Drawing.Point(6, 36);
             this.listViewSender.Name = "listViewSender";
-            this.listViewSender.Size = new System.Drawing.Size(487, 404);
+            this.listViewSender.Size = new System.Drawing.Size(598, 404);
             this.listViewSender.TabIndex = 17;
             this.listViewSender.UseCompatibleStateImageBehavior = false;
             this.listViewSender.View = System.Windows.Forms.View.Details;
@@ -225,7 +229,7 @@
             this.txtIpAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtIpAddress.Location = new System.Drawing.Point(48, 6);
             this.txtIpAddress.Name = "txtIpAddress";
-            this.txtIpAddress.Size = new System.Drawing.Size(272, 24);
+            this.txtIpAddress.Size = new System.Drawing.Size(396, 24);
             this.txtIpAddress.TabIndex = 15;
             this.txtIpAddress.Text = "127.0.0.1";
             this.txtIpAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -235,7 +239,7 @@
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(335, 8);
+            this.label2.Location = new System.Drawing.Point(450, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 22);
             this.label2.TabIndex = 14;
@@ -244,7 +248,7 @@
             // txtPortConnect
             // 
             this.txtPortConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPortConnect.Location = new System.Drawing.Point(393, 6);
+            this.txtPortConnect.Location = new System.Drawing.Point(508, 7);
             this.txtPortConnect.Name = "txtPortConnect";
             this.txtPortConnect.Size = new System.Drawing.Size(96, 24);
             this.txtPortConnect.TabIndex = 13;
@@ -258,47 +262,57 @@
             this.tabPage3.Controls.Add(this.pictureBox1);
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(502, 478);
+            this.tabPage3.Size = new System.Drawing.Size(610, 478);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "About";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TcpMultiFileTransfer.Properties.Resources.coder;
-            this.pictureBox1.Location = new System.Drawing.Point(88, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(302, 261);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(20, 298);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(462, 31);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Dursun Katar / dursun.katar@gmail.com";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(20, 349);
+            this.label5.Location = new System.Drawing.Point(3, 402);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(462, 31);
+            this.label5.Size = new System.Drawing.Size(603, 31);
             this.label5.TabIndex = 2;
             this.label5.Text = "Github Profile : @dursunkatar";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(4, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(603, 31);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Dursun Katar / dursun.katar@gmail.com";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TcpMultiFileTransfer.Properties.Resources.coder;
+            this.pictureBox1.Location = new System.Drawing.Point(155, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(306, 261);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Total Time";
+            this.columnHeader7.Width = 115;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Total Time";
+            this.columnHeader8.Width = 115;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 523);
+            this.ClientSize = new System.Drawing.Size(629, 523);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -343,6 +357,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
     }
 }
-
