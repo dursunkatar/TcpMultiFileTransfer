@@ -12,8 +12,6 @@ namespace TcpMultiFileTransfer
     {
         private readonly Socket socket;
         private readonly string fileName;
-        private readonly byte[] buffer = new byte[2048];
-
 
         public Receiver(Socket socket, string fileName)
         {
@@ -24,6 +22,7 @@ namespace TcpMultiFileTransfer
         public void LoadFile()
         {
             int bytesRead = 0;
+            byte[] buffer = new byte[2048];
             using (var networkStream = new NetworkStream(socket))
             using (var binaryReader = new BinaryReader(networkStream))
             using (Stream writer = File.OpenWrite("Downloads\\" + fileName))
