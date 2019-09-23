@@ -22,7 +22,7 @@ namespace TcpMultiFileTransfer
         public void LoadFile()
         {
             int bytesRead = 0;
-            byte[] buffer = new byte[2048];
+            byte[] buffer = new byte[5242880]; // 5 MB 
             using (var networkStream = new NetworkStream(socket))
             using (var binaryReader = new BinaryReader(networkStream))
             using (Stream writer = File.OpenWrite("Downloads\\" + fileName))
