@@ -81,11 +81,13 @@ namespace TcpMultiFileTransfer
                 catch { }
             }
         }
+        
         private static string totalTime(Stopwatch stopwatch)
         {
             double totalT = stopwatch.ElapsedMilliseconds / 1000.0;
-            return totalT > 60 ? totalT / 60.0 + " min" : totalT + " sec";
+            return totalT > 60 ? String.Format("{0:0.##}", totalT / 60.0) + " min" : String.Format("{0:0.##}", totalT) + " sec";
         }
+        
         private static ListViewItem listViewItem(FileInfo fileInfo)
         {
             var lvi = new ListViewItem();
