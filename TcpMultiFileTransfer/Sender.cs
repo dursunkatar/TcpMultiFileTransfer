@@ -42,7 +42,7 @@ namespace TcpMultiFileTransfer
             socket.Receive(WAIT);
 
             int bytesRead;
-            byte[] buffer = new byte[2048];
+            byte[] buffer = new byte[5242880]; // 5 MB 
             try
             {
                 using (var networkStream = new NetworkStream(socket))
