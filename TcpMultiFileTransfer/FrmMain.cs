@@ -108,7 +108,6 @@ namespace TcpMultiFileTransfer
                         Sender.Send(ipAddr, port, fileName);
 
                     }).Start();
-                    Thread.Sleep(200);
                 }
             }
             file.Dispose();
