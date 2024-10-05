@@ -16,7 +16,8 @@
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/dursunkatar/TcpMultiFileTransfer.git
-
+```
 ![filesend](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/sendscrn.png)
 
 ![receive](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/receivescrn.png)
+
