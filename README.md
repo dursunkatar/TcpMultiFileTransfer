@@ -17,6 +17,15 @@
 ```bash
 git clone https://github.com/dursunkatar/TcpMultiFileTransfer.git
 ```
+### 1. Open and Run:
+- Open the project in Visual Studio and build the solution.
+- Run the application and select the files you want to transfer.
+- Set up the **server** and **client** to establish a connection via TCP.
+
+### 2. Transfer Files:
+- After establishing the connection, choose the files to transfer from the client side, and the server will receive them.
+
+## ScreenShots
 ![filesend](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/sendscrn.png)
 
 ![receive](https://github.com/dursunkatar/TcpMultiFileTransfer/blob/master/receivescrn.png)
